@@ -51,6 +51,14 @@ rsync -aAXHv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","
 ```
 rsync -aAXHv --delete /backup/ --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/backup/*","/var/lib/dhcpcd/*","/lost+found"} /
 ```
+*View Size of Backup
+```
+sudo du -sh /backup
+```
+*Delete Backup
+```
+sudo rm -r /backup
+```
 
 #Thanks to , @hitrov
 how wrote the main script 
